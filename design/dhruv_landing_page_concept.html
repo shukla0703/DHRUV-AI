@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DHRUV AI Landing Concept</title>
+  <style>
+    :root {
+      --bg-base: #030817;
+      --bg-mid: #071127;
+      --panel: rgba(8, 18, 36, 0.86);
+      --panel-soft: rgba(13, 26, 47, 0.74);
+      --text-primary: #f7fbff;
+      --text-muted: #b9c9dc;
+      --accent-cyan: #2fd0ff;
+      --accent-blue: #1684ff;
+      --line: rgba(102, 197, 255, 0.22);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text-primary);
+      background:
+        radial-gradient(circle at 18% 18%, rgba(22, 132, 255, 0.18), transparent 24%),
+        radial-gradient(circle at 82% 12%, rgba(47, 208, 255, 0.14), transparent 22%),
+        linear-gradient(160deg, var(--bg-base), var(--bg-mid) 45%, #020614 100%);
+    }
+
+    .wrap {
+      width: min(1180px, calc(100vw - 48px));
+      margin: 0 auto;
+      padding: 28px 0 56px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      backdrop-filter: blur(12px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand img {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+      border-radius: 16px;
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 1.05rem;
+      letter-spacing: 0.12em;
+    }
+
+    .brand span {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      margin-top: 28px;
+    }
+
+    .hero-card,
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      padding: 28px;
+      backdrop-filter: blur(14px);
+    }
+
+    .eyebrow {
+      color: var(--accent-cyan);
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 14px 0 14px;
+      font-size: clamp(2.7rem, 6vw, 4.7rem);
+      line-height: 0.98;
+      max-width: 11ch;
+    }
+
+    .hero p,
+    .panel p {
+      color: var(--text-muted);
+      font-size: 1.02rem;
+      line-height: 1.6;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 14px 18px;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--text-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn.primary {
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+      color: #03101f;
+      border: none;
+    }
+
+    .logo-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 540px;
+      background:
+        radial-gradient(circle at center, rgba(47, 208, 255, 0.16), transparent 38%),
+        linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+    }
+
+    .logo-card img {
+      width: min(100%, 480px);
+      object-fit: contain;
+      filter: drop-shadow(0 0 36px rgba(47, 208, 255, 0.22));
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .card-title {
+      margin: 0 0 12px;
+      font-size: 1rem;
+      color: var(--text-primary);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .section {
+      margin-top: 28px;
+    }
+
+    @media (max-width: 920px) {
+      .hero, .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .logo-card {
+        min-height: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">
+        <img src="../assets/dhruv-logo.png" alt="DHRUV AI logo" />
+        <div>
+          <strong>DHRUV AI</strong>
+          <span>Intelligence that guides. Action that delivers.</span>
+        </div>
+      </div>
+      <a class="btn" href="#">Open Console</a>
+    </div>
+
+    <section class="hero">
+      <div class="hero-card">
+        <div class="eyebrow">Landing Concept</div>
+        <h1>Guided intelligence for real-world action.</h1>
+        <p>
+          DHRUV AI should feel like a navigation system for your digital life:
+          voice-aware, memory-backed, visually precise, and ready to move from
+          guidance into execution without friction.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#">Launch DHRUV AI</a>
+          <a class="btn" href="#">Explore Capabilities</a>
+        </div>
+      </div>
+
+      <div class="hero-card logo-card">
+        <img src="../assets/dhruv-logo.png" alt="DHRUV AI hero logo" />
+      </div>
+    </section>
+
+    <section class="grid section">
+      <div class="panel">
+        <div class="eyebrow">Dashboard</div>
+        <h3 class="card-title">Control-Center Layout</h3>
+        <p>The app UI should open into a mission dashboard with a hero brand strip, star-core presence widget, memory vault, live log, and mission console.</p>
+      </div>
+      <div class="panel">
+        <div class="eyebrow">Buttons</div>
+        <h3 class="card-title">Action Hierarchy</h3>
+        <p>Primary actions glow blue-cyan, secondary actions sit in navy glass, and destructive toggles use muted crimson. Everything should feel deliberate, not noisy.</p>
+      </div>
+      <div class="panel">
+        <div class="eyebrow">Memory</div>
+        <h3 class="card-title">Persistent Recall</h3>
+        <p>Recent searches, opened websites, and assistant activity should feel like navigational breadcrumbs the user can return to, not disposable logs.</p>
+      </div>
+    </section>
+
+    <section class="grid section">
+      <div class="panel">
+        <div class="eyebrow">Color Tokens</div>
+        <ul>
+          <li>Base: `#030817`</li>
+          <li>Midnight panel: `#071127`</li>
+          <li>Cyan signal: `#2fd0ff`</li>
+          <li>Blue action: `#1684ff`</li>
+          <li>White star-core: `#f6fbff`</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <div class="eyebrow">Tone</div>
+        <ul>
+          <li>Calm, guided, premium</li>
+          <li>Confident but not aggressive</li>
+          <li>Futuristic through clarity, not clutter</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <div class="eyebrow">Hero Copy</div>
+        <ul>
+          <li>Headline: “Guided intelligence for real-world action.”</li>
+          <li>Support: “From memory to execution, DHRUV AI keeps direction clear.”</li>
+          <li>CTA: “Launch DHRUV AI”</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
