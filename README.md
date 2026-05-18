@@ -48,10 +48,10 @@ Copy `.env.example` to `.env` and adjust as needed.
 
 Important defaults:
 
-- `AETHER_NAME=DHRUV AI`
-- `AETHER_WAKE_WORD=dhruv`
-- `AETHER_MEMORY_TURNS=6`
-- `AETHER_MEMORY_STORE=data/dhruv_memory.json`
+- `NAME=DHRUV AI`
+- `WAKE_WORD=dhruv`
+- `MEMORY_TURNS=6`
+- `MEMORY_STORE=data/dhruv_memory.json`
 
 Optional keys:
 
